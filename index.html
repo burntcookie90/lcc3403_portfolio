@@ -16,6 +16,57 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+
+	<style type="text/css">
+	#backtotop {
+		position: fixed;
+		right:0px;
+		bottom:15px;
+		display:none;/*hid the button first*/
+	}
+	#backtotop a {
+		text-decoration:none;
+		border:0 none;
+		display:block;
+		width:31px;
+		height:155px;
+	}
+	#backtotop a:hover {
+		opacity:.8; /*mouse over fade effect*/
+	}
+	.clrb {
+		clear:both;
+	}
+	#maindiv {
+		width:700px;
+		border:1px solid #999;
+		margin:auto;
+		padding:20px;
+	}
+	</style>
+	<!-- include jQuery Library -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- efforless script below -->
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			var pxShow = 300;//height on which the button will show
+			var fadeInTime = 1000;//how slow/fast you want the button to show
+			var fadeOutTime = 1000;//how slow/fast you want the button to hide
+			var scrollSpeed = 1000;//how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+			jQuery(window).scroll(function(){
+				if(jQuery(window).scrollTop() >= pxShow){
+					jQuery("#backtotop").fadeIn(fadeInTime);
+				}else{
+					jQuery("#backtotop").fadeOut(fadeOutTime);
+				}
+			});
+			 
+			jQuery('#backtotop a').click(function(){
+				jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
+				return false; 
+			}); 
+		});
+	</script>
   </head>
   <body>
       <div id="header">
@@ -155,6 +206,10 @@
 	  <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
 	</div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+	<div id="backtotop">
+		<a href="#">
+			<img src="images/arrow-up.gif" border="0" alt="Back to TOP" />
+		</a>
+	</div>
   </body>
 </html>
