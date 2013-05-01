@@ -52,21 +52,29 @@
 					var pxShow = 300;//height on which the button will show
 					var fadeInTime = 1000;//how slow/fast you want the button to show
 					var fadeOutTime = 1000;//how slow/fast you want the button to hide
-					var scrollSpeed = 1000;//how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+					var scrollSpeed = 500;//how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 					jQuery(window).scroll(function(){
 						if(jQuery(window).scrollTop() >= pxShow){
-						jQuery("#backtotop").fadeIn(fadeInTime);
-						}else{
-						jQuery("#backtotop").fadeOut(fadeOutTime);
+							jQuery("#backtotop").fadeIn(fadeInTime);
 						}
-						});
+						else{
+							jQuery("#backtotop").fadeOut(fadeOutTime);
+						}
+					});
 
 					jQuery('#backtotop a').click(function(){
 						jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
+						console.log("top clicked");
 						return false; 
 						}); 
-					});
-				</script>
+					jQuery('#ire_link').click(function(){
+						jQuery("html, body").animate({ scrollTop: $('#ire').offset().top }, scrollSpeed);
+						console.log("ire link clicked");
+						return false; 
+					}); 
+			});
+
+		</script>
 	</head>
 			<body>
 				<div id="header">
@@ -102,7 +110,7 @@
 								<tbody>
 									<tr>
 										<td>Introductory Reflective Essay</td>
-										<td><a href="#ire"/>Jump to section</td>
+										<td><a id="ire_link" href="#"/>Jump to section</td>
 									</tr>
 
 									<tr>
