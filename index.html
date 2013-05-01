@@ -67,17 +67,27 @@
 						console.log("top clicked");
 						return false; 
 						}); 
-					jQuery('#ire_link').click(function(){
-						jQuery("html, body").animate({ scrollTop: $('#ire').offset().top }, scrollSpeed);
-						console.log("ire link clicked");
-						return false; 
-					}); 
+					<!--jQuery('a[href^="#"]').on('click',function (e) {-->
+						<!--e.preventDefault();-->
+						<!--var target = this.hash,-->
+						<!--$target = $(target);-->
+						<!--$('html, body').stop().animate({-->
+							<!--'scrollTop': $target.offset().top-->
+						<!--}, 900, 'swing', function () {-->
+							<!--window.location.hash = target;-->
+						<!--});-->
+					<!--});-->
+					<!--jQuery('#ire_link').click(function(){-->
+						<!--jQuery("html, body").animate({ scrollTop: $('#ire').offset().top }, scrollSpeed);-->
+						<!--console.log("ire link clicked");-->
+						<!--return false; -->
+					<!--}); -->
 
-					jQuery('#blog_link').click(function(){
-						jQuery("html, body").animate({ scrollTop: $('#bp').offset().top }, 250);
-						console.log("bp link clicked");
-						return false; 
-					}); 
+					<!--jQuery('#blog_link').click(function(){-->
+						<!--jQuery("html, body").animate({ scrollTop: $('#bp').offset().top }, 250);-->
+						<!--console.log("bp link clicked");-->
+						<!--return false; -->
+					<!--}); -->
 			});
 
 		</script>
@@ -116,7 +126,7 @@
 								<tbody>
 									<tr>
 										<td>Introductory Reflective Essay</td>
-										<td><a id="ire_link" href="#"/>Jump to section</td>
+										<td><a id="ire_link" href="#ire"/>Jump to section</td>
 									</tr>
 
 									<tr>
@@ -136,7 +146,7 @@
 
 									<tr>
 										<td>Blog Posts</td>
-										<td><a id="blog_link" href="#"/>Jump to section</td>
+										<td><a id="blog_link" href="#bp"/>Jump to section</td>
 									</tr>
 
 									<tr>
