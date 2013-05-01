@@ -1,263 +1,299 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>LCC 3403 Portfolio</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>LCC 3403 Portfolio</title>
+		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="javascripts/respond.js"></script>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 
-	<style type="text/css">
-	#backtotop {
-		position: fixed;
-		right:0px;
-		bottom:15px;
-		display:none;/*hid the button first*/
-	}
-	#backtotop a {
-		text-decoration:none;
-		border:0 none;
-		display:block;
-		width:31px;
-		height:155px;
-	}
-	#backtotop a:hover {
-		opacity:.8; /*mouse over fade effect*/
-	}
-	.clrb {
-		clear:both;
-	}
-	#maindiv {
-		width:700px;
-		border:1px solid #999;
-		margin:auto;
-		padding:20px;
-	}
-	</style>
-	<!-- include jQuery Library -->
-	<script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
-	<!-- efforless script below -->
-	<script type="text/javascript">
-		jQuery(document).ready(function(){
-			var pxShow = 300;//height on which the button will show
-			var fadeInTime = 1000;//how slow/fast you want the button to show
-			var fadeOutTime = 1000;//how slow/fast you want the button to hide
-			var scrollSpeed = 1000;//how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-			jQuery(window).scroll(function(){
-				if(jQuery(window).scrollTop() >= pxShow){
-					jQuery("#backtotop").fadeIn(fadeInTime);
-				}else{
-					jQuery("#backtotop").fadeOut(fadeOutTime);
-				}
-			});
-			 
-			jQuery('#backtotop a').click(function(){
-				jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
-				return false; 
-			}); 
-		});
-	</script>
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="home"><a href="http://www.vishnurajeevan.com">Home</a></li>
-          <li class="fork"><a href="https://github.com/burntcookie90/lcc3403_portfolio">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/burntcookie90/lcc3403_portfolio/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/burntcookie90/lcc3403_portfolio/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+		<style type="text/css">
+			#backtotop {
+				position: fixed;
+				right:0px;
+				bottom:15px;
+				display:none;/*hid the button first*/
+			}
+			#backtotop a {
+				text-decoration:none;
+				border:0 none;
+				display:block;
+				width:31px;
+				height:155px;
+			}
+			#backtotop a:hover {
+				opacity:.8; /*mouse over fade effect*/
+			}
+			.clrb {
+				clear:both;
+			}
+			#maindiv {
+				width:700px;
+				border:1px solid #999;
+				margin:auto;
+				padding:20px;
+			}
+		</style>
+		<!-- include jQuery Library -->
+		<script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+		<!-- efforless script below -->
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+					var pxShow = 300;//height on which the button will show
+					var fadeInTime = 1000;//how slow/fast you want the button to show
+					var fadeOutTime = 1000;//how slow/fast you want the button to hide
+					var scrollSpeed = 1000;//how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+					jQuery(window).scroll(function(){
+						if(jQuery(window).scrollTop() >= pxShow){
+						jQuery("#backtotop").fadeIn(fadeInTime);
+						}else{
+						jQuery("#backtotop").fadeOut(fadeOutTime);
+						}
+						});
 
-    <div class="wrapper">
+					jQuery('#backtotop a').click(function(){
+						jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
+						return false; 
+						}); 
+					});
+				</script>
+	</head>
+			<body>
+				<div id="header">
+					<nav>
+					<li class="home"><a href="http://www.vishnurajeevan.com">Home</a></li>
+					<li class="fork"><a href="https://github.com/burntcookie90/lcc3403_portfolio">View On GitHub</a></li>
+					<li class="downloads"><a href="https://github.com/burntcookie90/lcc3403_portfolio/zipball/master">ZIP</a></li>
+					<li class="downloads"><a href="https://github.com/burntcookie90/lcc3403_portfolio/tarball/master">TAR</a></li>
+					<li class="title">DOWNLOADS</li>
+					</nav>
+				</div><!-- end header -->
 
-      <section>
-        <div id="title">
-          <h1>LCC 3403 Portfolio</h1>
-          <p></p>
-		  <hr>
-        </div>
-		<h2>Table of Contents</h2>
-		<table>
-			<colgroup />
-				<colgroup span="2" title="title" />
-					<!--<thead>-->
-						<!--<tr>-->
-							<!--<th scope="col">Project Name</th>-->
-							<!--<th scope="col">Class</th>-->
-							<!--<th scope="col">Repository</th>-->
-							<!--<th scope="col">Languages/Platforms</th>-->
-						<!--</tr>-->
-					<!--</thead>-->
-					<tbody>
-						<tr>
-							<td>Introductory Reflective Essay</td>
-							<td><a href="#ire"/>Jump to section</td>
-						</tr>
-						<tr>
-							<td>Job Packet</td>
-							<td><a href="#jp"/>Jump to section</td>
-						</tr>
-						<tr>
-							<td>Website Analysis</td>
-							<td><a href="#wa"/>Jump to section</td>
-						</tr>
-						<tr>
-							<td>Group Research Project</td>
-							<td><a href="#grp"/>Jump to section</td>
-						</tr>
-						<tr>
-							<td>Blog Posts</td>
-							<td><a href="#bp"/>Jump to section</td>
-						</tr>
-						<tr>
-							<td>Closing Statement</td>
-							<td><a href="#cs"/>Jump to section</td>
-						</tr>
-					</tbody>
-		</table>
-      </section>
+				<div class="wrapper">
 
-	 <section>
-		<div id="IRE">
-			<h2><a id="ire">Introductory Reflective Essay</a></h2>
-			<hr>
-			<p>Testing internal links</p>
-			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu purus metus. Ut vel laoreet dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Vivamus ultricies mi id sem pulvinar semper. Donec orci sem, varius fermentum lacinia eu, posuere ut nisi. Aliquam erat volutpat. Praesent quis lacus orci.
+					<section>
+					<div id="title">
+						<h1>LCC 3403 Portfolio</h1>
+						<p></p>
+						<hr>
+					</div>
+					<h2>Table of Contents</h2>
+					<table>
+						<colgroup />
+							<colgroup span="2" title="title" />
+								<!--<thead>-->
+									<!--<tr>-->
+										<!--<th scope="col">Project Name</th>-->
+										<!--<th scope="col">Class</th>-->
+										<!--<th scope="col">Repository</th>-->
+										<!--<th scope="col">Languages/Platforms</th>-->
+										<!--</tr>-->
+									<!--</thead>-->
+								<tbody>
+									<tr>
+										<td>Introductory Reflective Essay</td>
+										<td><a href="#ire"/>Jump to section</td>
+									</tr>
 
-			Fusce consequat malesuada neque ac auctor. Aenean blandit nunc nec massa semper gravida. Cras libero purus, venenatis sit amet lobortis sit amet, tincidunt at libero. Proin tempor pulvinar egestas. Ut a nunc sem, sollicitudin suscipit sem. Aliquam nec erat ac diam iaculis faucibus non in quam. Aenean at sodales felis.
+									<tr>
+										<td>Job Packet</td>
+										<td><a href="#jp"/>Jump to section</td>
+									</tr>
 
-			Proin at dolor sapien, eget volutpat magna. Integer dapibus faucibus ipsum ut laoreet. Duis et orci quam, nec facilisis mauris. Nulla facilisi. Aenean quis faucibus velit. Aenean lacinia, augue a aliquet mattis, odio eros viverra leo, non rhoncus nibh enim nec est. Nam placerat pharetra felis, sed suscipit nibh auctor quis. Donec venenatis ante at lectus tincidunt nec scelerisque nibh consequat. Suspendisse eget porta dui. Sed aliquam nisi vitae mauris hendrerit lacinia. Donec faucibus lacinia augue non molestie.
+									<tr>
+										<td>Website Analysis</td>
+										<td><a href="#wa"/>Jump to section</td>
+									</tr>
 
-			Morbi at leo felis, eu porttitor ante. Nunc ornare pulvinar eros a cursus. Donec elit odio, sollicitudin sed volutpat a, condimentum in erat. Maecenas non urna diam. Ut in ligula sit amet mi adipiscing condimentum. Cras id diam mattis tortor aliquam tristique. Etiam ut lacus mattis dui sagittis malesuada a ac quam. Aenean imperdiet blandit ullamcorper. Pellentesque eu dictum diam. Cras sit amet massa ut sem vulputate fermentum id nec lorem. Mauris accumsan consectetur augue, interdum sollicitudin erat varius id. Morbi sit amet urna libero. Proin nec lobortis enim. In convallis elementum felis, sit amet faucibus nunc laoreet id.
+									<tr>
+										<td>Group Research Project</td>
+										<td><a href="#grp"/>Jump to section</td>
+									</tr>
 
-			Nulla non turpis nec elit dignissim elementum id rutrum sapien. Sed condimentum facilisis placerat. Praesent vehicula aliquam neque sit amet tristique. Morbi sit amet mauris leo, nec ornare purus. In laoreet fermentum nibh, a dictum lorem molestie nec. Suspendisse porttitor massa sed sapien eleifend convallis. Vestibulum vulputate, dolor id tincidunt convallis, dolor nulla consequat justo, sed feugiat risus justo eget purus. Ut fringilla eros id leo tempor eu condimentum lacus interdum. Morbi laoreet dolor sit amet lorem egestas eget dapibus sapien porta.
+									<tr>
+										<td>Blog Posts</td>
+										<td><a href="#bp"/>Jump to section</td>
+									</tr>
 
-			Nam adipiscing magna nec ipsum porttitor ac dapibus nisl euismod. Nam pharetra congue malesuada. Donec suscipit aliquam augue, dictum laoreet diam condimentum eu. Integer rhoncus euismod ante sed lobortis. Donec quam nunc, scelerisque nec ultricies pulvinar, fringilla et eros. Morbi aliquam sagittis egestas. Maecenas vel eros odio. Cras feugiat purus a mauris consectetur in venenatis odio posuere. Suspendisse pulvinar urna id tortor consectetur sollicitudin. Nullam feugiat quam eu justo ornare commodo. Mauris nisl leo, dapibus non pellentesque quis, consequat vel lectus. Vivamus luctus aliquam magna, quis molestie risus posuere vitae. Nulla egestas sollicitudin ligula, vel ornare elit vehicula ut. Fusce at metus quis magna dapibus egestas. Morbi sed mauris quam.
+									<tr>
+										<td>Closing Statement</td>
+										<td><a href="#cs"/>Jump to section</td>
+									</tr>
+								</tbody>
+					</table>
+					</section>
 
-			Nam congue diam quis nulla auctor vel pharetra odio volutpat. Maecenas facilisis euismod est. Vestibulum pharetra dui est. Vestibulum quis rhoncus turpis. Nam tortor leo, vestibulum ultrices venenatis eget, dapibus vulputate tortor. Donec eget ante sed enim sollicitudin adipiscing. Nullam tempor tellus et dui accumsan in condimentum enim egestas. Integer ullamcorper dolor id nunc hendrerit consequat. Nullam accumsan facilisis neque sit amet posuere. In vitae nulla venenatis metus cursus pulvinar. Donec quis quam magna.
+					<section>
+						<div id="IRE">
+							<h2><a id="ire">Introductory Reflective Essay</a></h2>
+							<hr>
+							<p>It has been a couple of years since I have taken a class or had a job that emphasized the skill of communication.
+							The last time I had to write something to be read by another person was at least a year ago.
+							Due to this lack of practice, I can easily say that my ability to communicate my ideas was rather suboptimal.
+							Until taking this class, I thought this skill would not be of great use to me in my chosen field of work. 
+							However, being able to communication your ideas is both useful and necessary in any field of work, even technical ones.
+							I learned how to properly tailor my method of communication to the audience that I am communicating with.
+							Additionally, I learned that my skills in application design and layout also apply to my technical communication
+							Finally, the group research project taught me how to work in a group of people that I did not choose to work with, a very helpful thing to learn before going to work full time after this semester.</p>
 
-			Maecenas rutrum laoreet orci, sed rhoncus turpis scelerisque ut. Phasellus posuere, nisi eget pretium imperdiet, enim arcu faucibus tortor, nec semper mi neque vel lectus. Phasellus feugiat faucibus felis sit amet accumsan. Fusce gravida, arcu et fringilla laoreet, turpis arcu aliquam purus, sed interdum diam mi in nunc. Nullam mauris.
+							<p>Though it seems like common sense to write your communication with your readers in mind, it does not always happen that way.
+							Before this class, I would take the time to think about the audience that I was directing my communication towards, but never in depth.
+							Things like reader's context, professional/cultural characteristics, and an audiences' stake in my writing, never came up during the planning stages.
+							I took these ideas and applied them when writing the memo about Georgia Tech's wireless network connection instructions for Ubuntu.
+							When writing the memo, I made sure to not be too pushy with my ideas.
+							If I was in the group that the memo was directed to, and it was too forceful, I would disregard it as an angry rant rather than a possibly helpful suggestion.
+							However, because the memo had the purpose of changing the existing instruction list, I made sure to detail the improvements that could be made.
+							Additionally, because this was a professional memo, I made sure the language did not use any colloquialisms as this could cause the reader to, once again, disregard the suggestions that I proposed.</p>
 
-			</p>
-		</div>
+							<p>As a software developer, we usually get the help of user experience designers to help make our products usable by consumers. 
+							I have been told that, unlike most developers, I have always tried to design my application with user experience in mind.
+							This ability can be seen in the website UI  mock-up that my group and I used for our presentation.
+							I utilized many design elements that I have learned over the past years as a software developer in the mock-up.
+							Elements such as intuitive navigation, use of whitespace and reduced actions are all included in the design of the website.
+							This design practice transfers to other applications as well, such as document design and layouts.
+							My resume is designed for ease of data consumption.
+							A recruiter reading my resume can quickly find important sections and data on my years at Georgia Tech.
+							Such a design is useful in making a good impression with a recruiter while looking for a job.</p>
 
-		<div id="JP">
-			<h2><a id="jp">Job Packet</a></h2>
-			<hr>
-			<p></p>
-			<p></p>
-			<p></p>
-			<h3> Draft </h3>
-			<h3>Cover Letter</h3>
-			<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FCover_Letter.pdf&embedded=true" width="650" height="780" style="border: none;"></iframe>
-
-			<h3>Resume</a>
-			<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FResume.pdf&embedded=true" width="650" height="780" style="border: none;"></iframe>
-		</div>
-
-		<div id="WA">
-			<p></p>
-			<p></p>
-			<p></p>
-			<h2><a id="wa">Website Analysis</a></h2>
-			<hr>
-			<!--<p>Testing internal links</p>-->
-			<p></p>
-			<p></p>
-			<p></p>
-			<h3> Draft </h3>
-			<h3>Memo</h3>
-			<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FLCCMA2Draft.pdf&embedded=true" width="650" height="780" style="border: none;"></iframe>
-			<h3>Video Directions</h3>
-			<iframe width="640" height="360" src="http://www.youtube.com/embed/x3MsigNzMwA?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>
-
-		<div id="GRP">
-			<p></p>
-			<p></p>
-			<p></p>
-			<h2><a id="grp">Group Research Project</a></h2>
-			<hr>
-			<!--<iframe src="https://www.fluidui.com/editor/live/preview/p_O9xW0gP0oAzKrPXik3ByAz3cNi3qcmW7.1366827061862" width="600" height="600" style="border: none;"></iframe>-->
-			<h3> Revision </h3>
-			<li><a href="https://www.fluidui.com/editor/live/preview/p_O9xW0gP0oAzKrPXik3ByAz3cNi3qcmW7.1366829272070">Website Mockup [Revision] </a></li>
-			<p></p>
-			<p></p>
-			<p></p>
-			<h3> Draft </h3>
-			<img src="images/gt_hive_home.png" width=650/>
-			<h4>(Due to limitiations with fluidui's free accounts, I cannot host the draft. I have included a screenshot of the draft version's homepage)</h4>
-			<p></p>
-		</div>
-
-		<div id="BP">
-			<p></p>
-			<p></p>
-			<p></p>
-			<h2><a id="bp">Blog Posts</a></h2>
-			<hr>
-			<h3>MA2 blog post</h3>
-			<h4>Mar 1, 2013 11:16 AM</h4>
-			<p> I think the best thing about my submission is the instructional video that I recorded.
-			It takes everything from the original source instructions and puts it in an easy to understand, short, format.
-			The hardest part of creating it was coming up with ways to improve a set of instructions that were already pretty good to start with.
-			I visualized my reader as someone similar to me: good technical knowledge, but average to low communication knowledge.
-			By doing this, I was able to voice my ideas and concerns as in a more natural manner.
-			My objective was to point out some flaws and areas for improvement in the existing instructions, an objective that I think I met. 
-			Overall, I think I deserve a B to B+ on this assignment. 
-			Although I feel that I met my own personal objective, I could have had more content and I am not very confident about my grammar skills.</p>
-			<a href="https://t-square.gatech.edu/direct/blog-entry/024f38323d069a80013d26bd924403f9">Source</a>
-
-			<h3>MA1 Blog Post</h3>
-			<h4>Jan 23, 2013 11:17 AM</h4>
-			<p>
-			This assignment definitely helped make my professional documents look more professional.
-			The combination of peer reviews and the resume/cover letter checklist were very helpful.
-			The easiest part of this assignment was the resume, I already had a resume that was peer reviewed by many people.
-			Also, my resume has been submitted to many recruiters, who have complimented it's style and content.
-			The most challenging part of the assignment, on the other hand, was the  cover letter.
-			The last cover letter that I had written was in high school for a summer internship.
-			My lack of experience in writing cover letters and lack of recent writing practice made the task a bit more challenging than I had expected.
-			If I had one more hour, I would probably get one more peer review on this draft of the cover letter, as there was still some wording I didn't quite enjoy.
-			Before submitting in earnest, I would attempt to make the letter sound a little less...braggy.
-			</p>
-			<a href="https://t-square.gatech.edu/direct/blog-entry/024f382f3c525bed013c6832efbb03b0">Source</a>
-		</div>
-
-		<div id="CS">
-			<p></p>
-			<p></p>
-			<p></p>
-			<hr>
-			<h2><a id="cs">Closing Statements</a></h2>
-			<p>Testing internal links</p>
-		</div>
-	</section>
-    </div>
+							<p>The computer science curriculum has many group based project classes.
+							However, the groups are usually formed by choice, rather than randomly(or purposefully) chosen for the students.
+							Because of this, I am very good at working in groups with my friends, and can usually manage the group and the workload balance gracefully.
+							I have rarely needed to deal with a group member that did not perform their responsibilities, or a group member that did felt like their time was better used elsewhere.
+							Learning to manage a group of people who I have no chosen was a very helpful skill to learn.
+							After this semester I will begin a full-time position in a company that works heavily in groups.
+							In industry, you do not always get to choose your team members and you must learn to deal with issues that can arise in such a setting.
+							After dealing with such a situation in this class, I think I learned a good bit from the experience that can be brought with me to my position at my company.</p>
+						</div>
 
 
-	<div id="footer">
-	  <hr>
-	  <span class="credits left">Project maintained by <a href="https://github.com/burntcookie90">burntcookie90</a></span>
-	  <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-	</div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-	<div id="backtotop">
-		<a href="#">
-			<img src="images/arrow-up-resize.png" border="0" alt="Back to TOP" />
-		</a>
-	</div>
-  </body>
+						<div id="JP">
+							<h2><a id="jp">Job Packet</a></h2>
+							<hr>
+							<p></p>
+							<p></p>
+							<p></p>
+							<h3> Draft </h3>
+							<h3>Cover Letter</h3>
+							<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FCover_Letter.pdf&embedded=true" width="650" height="780" style="border: none;"></iframe>
+
+							<h3>Resume</a>
+							<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FResume.pdf&embedded=true" width="650" height="780" style="border: none;"></iframe>
+						</div>
+
+
+						<div id="WA">
+							<p></p>
+							<p></p>
+							<p></p>
+							<h2><a id="wa">Website Analysis</a></h2>
+							<hr>
+							<h3> Revision </h3>
+							<p></p>
+							<p></p>
+							<h3> Memo </h3>
+							<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FLCCMA2Revision.pdf&embedded=true" width="600" height="780" style="border: none;"></iframe>
+							<h3>Video Directions</h3>
+							<iframe width="640" height="360" src="http://www.youtube.com/embed/x3MsigNzMwA?rel=0" frameborder="0" allowfullscreen></iframe>
+							<p></p>
+							<p></p>
+							<p></p>
+							<h3> Draft </h3>
+							<h3>Memo</h3>
+							<iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fburntcookie90%2Flcc3403_portfolio%2Fraw%2Fgh-pages%2Fresources%2FLCCMA2Draft.pdf&embedded=true" width="650" height="780" style="border: none;"></iframe>
+						</div>
+
+
+						<div id="GRP">
+							<p></p>
+							<p></p>
+							<p></p>
+							<h2><a id="grp">Group Research Project</a></h2>
+							<hr>
+							<h3> Revision </h3>
+							<p></p>
+							<p></p>
+							<li><a href="https://www.fluidui.com/editor/live/preview/p_O9xW0gP0oAzKrPXik3ByAz3cNi3qcmW7.1366829272070">Website Mockup [Revision] </a></li>
+							<p></p>
+							<p></p>
+							<p></p>
+							<h3> Draft </h3>
+							<img src="images/gt_hive_home.png" width=650/>
+							<h4>(Due to limitiations with fluidui's free accounts, I cannot host the draft. I have included a screenshot of the draft version's homepage)</h4>
+							<p></p>
+						</div>
+
+
+						<div id="BP">
+							<p></p>
+							<p></p>
+							<p></p>
+							<h2><a id="bp">Blog Posts</a></h2>
+							<hr>
+							<p></p>
+							<p></p>
+							<h3>MA2 blog post</h3>
+							<h4>Mar 1, 2013 11:16 AM</h4>
+							<p> I think the best thing about my submission is the instructional video that I recorded.
+							It takes everything from the original source instructions and puts it in an easy to understand, short, format.
+							The hardest part of creating it was coming up with ways to improve a set of instructions that were already pretty good to start with.
+							I visualized my reader as someone similar to me: good technical knowledge, but average to low communication knowledge.
+							By doing this, I was able to voice my ideas and concerns as in a more natural manner.
+							My objective was to point out some flaws and areas for improvement in the existing instructions, an objective that I think I met. 
+							Overall, I think I deserve a B to B+ on this assignment. 
+							Although I feel that I met my own personal objective, I could have had more content and I am not very confident about my grammar skills.</p>
+							<a href="https://t-square.gatech.edu/direct/blog-entry/024f38323d069a80013d26bd924403f9">Source</a>
+
+							<p></p>
+							<p></p>
+							<h3>MA1 Blog Post</h3>
+							<h4>Jan 23, 2013 11:17 AM</h4>
+							<p>
+							This assignment definitely helped make my professional documents look more professional.
+							The combination of peer reviews and the resume/cover letter checklist were very helpful.
+							The easiest part of this assignment was the resume, I already had a resume that was peer reviewed by many people.
+							Also, my resume has been submitted to many recruiters, who have complimented it's style and content.
+							The most challenging part of the assignment, on the other hand, was the  cover letter.
+							The last cover letter that I had written was in high school for a summer internship.
+							My lack of experience in writing cover letters and lack of recent writing practice made the task a bit more challenging than I had expected.
+							If I had one more hour, I would probably get one more peer review on this draft of the cover letter, as there was still some wording I didn't quite enjoy.
+							Before submitting in earnest, I would attempt to make the letter sound a little less...braggy.
+							</p>
+							<a href="https://t-square.gatech.edu/direct/blog-entry/024f382f3c525bed013c6832efbb03b0">Source</a>
+						</div>
+
+
+						<div id="CS">
+							<p></p>
+							<p></p>
+							<p></p>
+							<hr>
+							<h2><a id="cs">Closing Statements</a></h2>
+							<p>Testing internal links</p>
+						</div>
+					</section>
+				</div>
+
+
+				<div id="footer">
+					<hr>
+					<span class="credits left">Project maintained by <a href="https://github.com/burntcookie90">burntcookie90</a></span>
+					<span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+				</div>
+					<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+				<div id="backtotop">
+					<a href="#">
+						<img src="images/arrow-up-resize.png" border="0" alt="Back to TOP" />
+					</a>
+				</div>
+			</body>
 </html>
