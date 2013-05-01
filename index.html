@@ -72,6 +72,12 @@
 						console.log("ire link clicked");
 						return false; 
 					}); 
+
+					jQuery('#blog_link').click(function(){
+						jQuery("html, body").animate({ scrollTop: $('#bp').offset().top }, scrollSpeed);
+						console.log("bp link clicked");
+						return false; 
+					}); 
 			});
 
 		</script>
@@ -130,7 +136,7 @@
 
 									<tr>
 										<td>Blog Posts</td>
-										<td><a href="#bp"/>Jump to section</td>
+										<td><a id="blog_link" href="#"/>Jump to section</td>
 									</tr>
 
 									<tr>
